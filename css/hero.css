@@ -1,0 +1,69 @@
+#hero {
+    width: 100%;
+    background: url(../images/hero-back.png) no-repeat;
+    
+    background-size: cover;
+}
+
+
+.hero__title {
+    color: var(--text-color, #252B42);
+    max-width: 509px;
+    padding: 100px 0 40px;
+    font-size: 58px;
+    font-style: normal;
+    font-weight: 800;
+}
+
+.hero__desc {
+    color: var(--second-text-color, #737373);
+    font-size: 20px;
+    max-width: 376px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.hero__btns {
+    display: flex;
+    padding: 45px 0 250px;
+    gap: 20px;
+}
+
+.quato__btn {
+    padding: 10px 36px;
+    border-radius: 36px;
+}
+
+.more__btn {
+    padding: 10px 36px;
+    border-radius: 36px;
+}
+
+@media(max-width:500px) {
+    .hero__title {
+        max-width: 300px;
+        font-size: 45px;
+        text-align: center;
+    }
+    .hero__desc{
+        max-width: 279px;
+        text-align: center;
+    }
+    .hero__btns {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .quato__btn {
+        max-width: 200px;
+        height: 45px;
+        margin: 0 auto;
+    }
+
+    .more__btn {
+        max-width: 200px;
+        height: 45px;
+        margin: 0 auto;
+    }
+
+}

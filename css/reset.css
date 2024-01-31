@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Montserrat';
+    font-style: normal;
+    scroll-behavior: smooth;
+
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+}
+
+@media(min-width: 1440px) {
+    .container {
+        width: 1140px;
+    }
+}
+
+.df {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fd{
+    display: flex;
+    align-items: center;
+}
+
+#backtop {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    bottom: 30px;
+    right: 30px;
+    color: var(--light-text-color);
+    background-color: var(--secondary-color-1);
+    font-size: 22px;
+    border-radius: 50%;
+    display: none;
+}
+
+.show-backtop {
+    display: flex !important;
+}
+
+
+
+.light {
+    transition: 0.5s;
+    --primary-black: white;
+    --primary-white: black;
+    --darkModeIconColor: yellow;
+}
+
+.btn {
+    color: var(--secondary-color-1);
+    border: 1px solid var(--secondary-color-1);
+    background-color: var(--light-text-color);
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: var(--light-text-color);
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+
+}
